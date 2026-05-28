@@ -1,0 +1,11 @@
+<?php
+
+class PxlRecentNews_Widget extends Pxltheme_Core_Widget_Base{
+    protected $name = 'pxl_recent_news';
+    protected $title = 'Case Recent News';
+    protected $icon = 'eicon-posts-ticker';
+    protected $categories = array( 'pxltheme-core' );
+    protected $params = '{"sections":[{"name":"tab_source","label":"Source","tab":"content","controls":[{"name":"source","label":"Select Categories","type":"select2","multiple":true,"options":{"branding|category":"Branding","business|category":"Business","development|category":"Development","illustration|category":"Illustration","seo-marketing|category":"SEO Marketing","web-design|category":"Web Design","business|post_tag":"business","digital|post_tag":"digital","digital-agency|post_tag":"digital agency","featured|post_tag":"featured","innovation|post_tag":"innovation","marketing|post_tag":"marketing","printing|post_tag":"printing","product|post_tag":"product","startup|post_tag":"startup","technology|post_tag":"technology","trendy|post_tag":"trendy"}},{"name":"orderby","label":"Order By","type":"select","default":"date","options":{"date":"Date","ID":"ID","author":"Author","title":"Title","rand":"Random"}},{"name":"order","label":"Sort Order","type":"select","default":"desc","options":{"desc":"Descending","asc":"Ascending"}},{"name":"limit","label":"Total items","type":"number","default":"4"}]},{"name":"tab_display","label":"Display Options","tab":"content","controls":[{"name":"show_date","label":"Show Date","type":"switcher","default":"true"},{"name":"show_author","label":"Show Author","type":"switcher","default":"true"},{"name":"show_comment","label":"Show Comment","type":"switcher","default":"true"},{"name":"show_excerpt","label":"Show Excerpt","type":"switcher","default":"true"},{"name":"num_words","label":"Number of Words","type":"number","default":25,"condition":{"show_excerpt":["true"]}},{"name":"show_button","label":"Show Button Readmore","type":"switcher","default":"true"},{"name":"button_text","label":"Button Text","type":"text","condition":{"show_button":["true"]}}]}]}';
+    protected $styles = array(  );
+    protected $scripts = array(  );
+}
